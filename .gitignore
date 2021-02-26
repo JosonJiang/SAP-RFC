@@ -1,0 +1,50 @@
+bin
+obj
+.vs
+.vscode
+
+# /DockerCompose.Sample.Web/obj
+# /DockerCompose.Sample.IService/bin
+# /DockerCompose.Sample.IService/obj
+# /DockerCompose.Sample.Service/bin
+# /DockerCompose.Sample.Service/obj
+# /DockerCompose.Sample.Web/bin
+
+
+
+# git rm --cached -r /DockerCompose.Sample.Web/obj
+# git rm --cached -r /DockerCompose.Sample.IService/bin
+# git rm --cached -r /DockerCompose.Sample.IService/obj
+# git rm --cached -r /DockerCompose.Sample.Service/bin
+# git rm --cached -r /DockerCompose.Sample.Service/obj
+# git rm --cached -r /DockerCompose.Sample.Web/bin
+
+# git commit -m "删除临时文件"
+# git push
+
+#  参考文档 https://blog.csdn.net/u010566681/article/details/53183146 
+#  git rm -r --cached .
+#  git add .
+#  git commit -m 'update .gitignore'
+
+
+*/obj
+*/bin
+
+
+# 此为注释 – 将被 Git 忽略
+ 
+*.a
+# 忽略所有 .a 结尾的文件
+!lib.a
+# 但 lib.a 除外
+/TODO
+# 仅仅忽略项目根目录下的 TODO 文件，不包括 subdir/TODO
+build/
+# 忽略 build/ 目录下的所有文件
+doc/*.txt
+# 忽略 doc/notes.txt 但不包括 doc/server/arch.txt
+
+# #忽略gitignore文件
+# .gitignore  
+
